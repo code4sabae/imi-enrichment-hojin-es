@@ -1,0 +1,2207 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!-- ヘッダー -->
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<meta name="format-detection" content="telephone=no">
+<title>差分データのダウンロード（全国）｜国税庁法人番号公表サイト</title>
+<meta name="description" content="法人の所在地別に基本３情報データをダウンロードすることができます。新規に法人番号を指定した団体の情報のほか、名称・所在地の変更や登記記録の閉鎖等の変更情報をダウンロードすることができます。">
+<meta name="keywords" content="差分データのダウンロード（全国）,国税庁法人番号公表サイト">
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="/common/css/reset.css" media="screen, print">
+<link rel="stylesheet" href="/common/css/style.css" media="screen, print">
+<link rel="stylesheet" href="/common/css/jquery-ui.min.css" media="screen, print">
+<link rel="stylesheet" href="/common/css/colorbox.css" media="screen, print">
+<link rel="stylesheet" href="/common/css/print.css" media="print">
+<link href="https://www.houjin-bangou.nta.go.jp/download/sabun/" rel="canonical" />
+<!-- JS -->
+<script src="/common/js/jquery-1.11.1.min.js"></script>
+<script src="/common/js/jquery-ui.min.js"></script>
+<script src="/common/js/jquery_cookie.js"></script>
+<script src="/common/js/jquery-accessibleMegaMenu.js"></script>
+<!--[if lt IE 9]>
+<script src="/common/js/html5shiv-printshiv.min.js"></script>
+<script src="/common/js/selectivizr-min.js"></script>
+<![endif]-->
+<script src="/common/js/common.js"></script>
+<script src="/common/js/en-entry.js"></script>
+<script src="/common/js/jquery.json-2.4.min.js"></script>
+<script src="/common/js/jquery.colorbox-min.js"></script>
+<script src="/common/js/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+	window.rsConf = { general: { syncContainer: 'font' , usePost: true },
+	settings: { textselection: 'border-bottom: none; background-color: #eee;' } };
+</script>
+<script src="//cdn1.readspeaker.com/script/8899/webReader/webReader.js?pids=wr&amp;forceAdapter=ioshtml5&amp;disable=translation,lookup" type="text/javascript"></script>
+
+
+
+</head>
+ <!--/*/**/*/-->
+<body>
+<!-- ボディー -->
+
+<div id="pageTop" class="wrapper">
+<noscript><p class="jsAlrt">このサイトではJavascript機能をOnにしてご利用ください。</p></noscript>
+<div id="blockskip"><a href="#contents">ページの本文へ</a></div>
+
+<header role="banner">
+	<p class="logo">
+
+	<a href="/"><img src="/common/images/head-logo.gif" alt="社会保障・税番号制度 国税庁法人番号公表サイト" width="330" height="50"></a>
+
+	</p>
+	<p class="tagline"><img src="/common/images/head-tagline.gif" width="270" height="50" alt="法人番号で わかる。つながる。ひろがる。"></p>
+	<div class="headMenu">
+		<ul class="headLink">
+			<li>
+				<div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+					<a href="//app-as.readspeaker.com/cgi-bin/rsent?customerid=8899&amp;lang=ja_jp&amp;readid=contents&amp;url=" title="音声で読み上げる" rel="nofollow" class="rsbtn_play" accesskey="L">
+						<span class="rsbtn_left rsimg rspart">
+							<span class="rsbtn_text">
+								<span>読み上げる</span>
+							</span>
+						</span>
+						<span class="rsbtn_right rsimg rsplay rspart"></span>
+					</a>
+				</div>
+			</li>
+			<li lang="en"><a href="#" onclick="return changeLang();">English</a></li>
+			<li><a href="/sitemap/">サイトマップ(Site Map)</a></li>
+		</ul>
+		<dl class="fontSize">
+			<dt><img src="/common/images/head-font-title.gif" width="62" height="22" alt="文字サイズ"></dt>
+			<dd>
+				<ul id="fontsize">
+					<li id="font_l"><a href="javascript:void(0);"><img src="/common/images/head-font-large.gif" width="76" height="22" alt="大きく"></a></li>
+					<li id="font_m"><a href="javascript:void(0);"><img src="/common/images/head-font-basis.gif" width="76" height="22" alt="元に戻す"></a></li>
+					<li id="font_s"><a href="javascript:void(0);"><img src="/common/images/head-font-small.gif" width="76" height="22" alt="小さく"></a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+	<p class="dateTime"></p>
+</header>
+<nav class="gNav" role="navigation">
+	<ul class="nav-menu">
+		<li class="nav-item">
+			<a href="/"><img src="/common/images/gnav-home2.gif" width="140" height="70" alt="ホーム(法人番号を検索)"></a>
+		</li>
+		<li class="nav-item">
+			<a href="/oshirase/"><img src="/common/images/gnav-news2.gif" width="136" height="70" alt="お知らせ"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/oshirase/">お知らせ一覧</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a href="/setsumei/"><img src="/common/images/gnav-about2.gif" width="136" height="70" alt="法人番号とは"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/setsumei/" class="top">法人番号とは</a></li>
+					<li><a href="/setsumei/rikatsuyo/">法人番号の利活用事例</a></li>
+					<li><a href="/setsumei/pamphlet/">各種資料の紹介</a></li>
+					<li><a href="/setsumei/tsuchisho/">通知書について</a></li>
+					<li><a href="/setsumei/houjin-bangou_joho/">法人番号に関する情報</a></li>
+					<li><a href="/setsumei/shinsetsuhoujin/">新しく法人の設立登記をされた方へ</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a href="/download/" class="current"><img src="/common/images/gnav-download2.gif" width="136" height="70" alt="ダウンロード/Web-API"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/download/">基本３情報ダウンロード</a></li>
+					<li><a href="/webapi/">法人番号システムWeb-API機能</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a href="/eigotouroku/"><img src="/common/images/gnav-eigotouroku2.gif" width="152" height="70" alt="英語表記の登録"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/eigotouroku/">英語表記の登録</a></li>
+				</ul>
+		  </div>
+		</li>
+		<li class="nav-item">
+			<a href="/tetsuzuki/"><img src="/common/images/gnav-procedure2.gif" width="136" height="70" alt="各種手続"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/tetsuzuki/" class="top">各種手続</a></li>
+					<li><a href="/tetsuzuki/sitei/">法人番号の指定を受けるための届出</a></li>
+					<li><a href="/tetsuzuki/henko/">名称・所在地等の変更の届出</a></li>
+					<li><a href="/tetsuzuki/doi-kakunin/">法人番号等の公表同意</a></li>
+					<li><a href="/tetsuzuki/doi-tekkai/">公表同意の撤回</a></li>
+				</ul>
+			</div>
+		</li>
+		<li class="nav-item">
+			<a href="/shitsumon/"><img src="/common/images/gnav-faq2.gif" width="136" height="70" alt="よくある質問"></a>
+			<div class="sub-nav">
+				<ul class="sub-nav-group">
+					<li><a href="/shitsumon/" class="top">よくある質問</a></li>
+					<li><a href="/shitsumon/category.html?selCategoryId=00000">法人番号の指定</a></li>
+					<li><a href="/shitsumon/category.html?selCategoryId=00002">法人番号の通知</a></li>
+					<li><a href="/shitsumon/category.html?selCategoryId=00003">法人番号の公表</a></li>
+					<li><a href="/shitsumon/category.html?selCategoryId=00004">フリガナの公表</a></li>
+					<li><a href="/shitsumon/category.html?selCategoryId=00006">Web-API</a></li>
+				</ul>
+			</div>
+		</li>
+	</ul>
+</nav>
+
+<div class="breadcrumbs">
+<p><a href="/">ホーム</a>&nbsp;&gt;&nbsp;<a href="../index.html">基本３情報ダウンロード</a>&nbsp;&gt;&nbsp;差分データのダウンロード（全国）</p>
+<!-- /breadcrumbs --></div>
+
+<div id="contents">
+
+
+
+<main role="main">
+	<div class="box01">
+		<h1 class="head">差分データのダウンロード（全国）</h1>
+
+		<div class="inBox20">
+
+			<div class="readMe">
+<p class="indent">新規に法人番号を指定した団体の情報のほか、名称・所在地の変更や登記記録の閉鎖等の変更情報をダウンロードすることができます。</p>
+<!-- /readMe --></div>
+<div class="pageNav">
+<ul>
+<li><a href="#csv-sjis">CSV形式・Shift-JIS</a></li>
+<li><a href="#csv-unicode">CSV形式・Unicode</a></li>
+<li><a href="#xml-unicode">XML形式・Unicode</a></li>
+</ul>
+<!-- /pageNav --></div>
+<h2 class="title">ご利用に当たって</h2>
+<ul class="listIcon01">
+<li>日次で全国及び国外のデータを一括りにしたファイルを作成し、原則として夕刻以降に公開しています（土曜日、日曜日、祝日及び年末年始（12月29日から１月３日）を除く）。</li>
+<li>過去40日分をダウンロードすることができます。<br />
+ なお、ダウンロードするタイミングにより、取得できるデータは異なります。<br />
+ 　・　日次の差分データ公開前　当日分を含めないで過去40日分<br />
+ 　・　日次の差分データ公開後　当日分を含めて過去40日分</li>
+<li>ファイルをzip形式で圧縮して提供しています。解凍してご利用ください。</li>
+<li>ファイルには、OpenPGPを用いて署名を付与しています。署名の検証方法等については、「国税庁法人番号公表サイトのPGP公開鍵について」を参照してください。</li>
+</ul>
+<p class="linkArw01 mb40"><a href="https://www.houjin-bangou.nta.go.jp/download/kokaikagi/index.html">国税庁法人番号公表サイトのPGP公開鍵について</a></p>
+
+		<!-- /inBox20 --></div>
+
+			
+    <script type="text/javascript">
+
+        
+        var showHistoryNoCsvSj = 2;
+
+        
+        var showHistoryNoCsvUn = 2;
+
+        
+        var showHistoryNoXmlUn = 2;
+
+        
+        var FILE_TYPE_CSVSJ = 0;
+
+        
+        var FILE_TYPE_CSVUN = 1;
+
+        
+        var FILE_TYPE_XMLUN = 2;
+
+        
+        function clickHistoryBtn(filetype) {
+            if (filetype == FILE_TYPE_CSVSJ) {
+                $(".type" + filetype + "_corpHistory" + showHistoryNoCsvSj).show();
+                if ($("#corpHistoryNum").val() <= showHistoryNoCsvSj) {
+                    $("#btnMore" + filetype).hide();
+                }
+                showHistoryNoCsvSj++;
+            } else if (filetype == FILE_TYPE_CSVUN) {
+                $(".type" + filetype + "_corpHistory" + showHistoryNoCsvUn).show();
+                if ($("#corpHistoryNum").val() <= showHistoryNoCsvUn) {
+                    $("#btnMore" + filetype).hide();
+                }
+                showHistoryNoCsvUn++;
+            } else if (filetype == FILE_TYPE_XMLUN) {
+                $(".type" + filetype + "_corpHistory" + showHistoryNoXmlUn).show();
+                if ($("#corpHistoryNum").val() <= showHistoryNoXmlUn) {
+                    $("#btnMore" + filetype).hide();
+                }
+                showHistoryNoXmlUn++;
+            }
+        }
+
+        
+        function doDownload(fileNo) {
+            $("#selDlFileNo").val(fileNo);
+            $("#appForm").submit();
+            return false;
+        }
+
+    </script>
+    <form id="appForm" action="/download/sabun/index.html" method="post"><div><input type="hidden" name="jp.go.nta.houjin_bangou.framework.web.common.CNSFWTokenProcessor.request.token" value="c9250f3e-94fd-4a21-a8a3-a938277eb7fc"/></div>
+        <input type="hidden" name="event" id="event" value="download">
+        <input type="hidden" name="selDlFileNo" id="selDlFileNo">
+        <div class="inBox21">
+            
+                
+            
+            
+            
+                
+                    <h2 class="title" id="csv-sjis">CSV形式・Shift_JIS</h2>
+                
+                
+                
+                <div class="tbl03">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w30">差分データファイル作成日</th>
+                                <th scope="col">ダウンロードファイル</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                                
+                                    
+                                        <tr class="type0_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月4日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11428);">zip 192KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type0_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月3日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11425);">zip 198KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type0_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月2日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11422);">zip 178KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type0_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11419);">zip 160KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type0_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年5月29日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11267);">zip 170KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11264);">zip 163KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11261);">zip 183KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月26日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11258);">zip 202KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月25日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11255);">zip 173KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11252);">zip 182KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11249);">zip 170KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11246);">zip 177KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月19日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11243);">zip 219KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月18日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11240);">zip 163KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11237);">zip 158KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11234);">zip 153KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11231);">zip 159KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月12日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11228);">zip 178KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月11日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11225);">zip 150KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11222);">zip 144KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11219);">zip 131KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11216);">zip 147KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月30日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11064);">zip 132KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11061);">zip 142KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11058);">zip 130KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月24日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11055);">zip 135KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月23日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11052);">zip 131KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11049);">zip 145KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11046);">zip 161KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11043);">zip 138KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月17日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11040);">zip 162KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月16日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11037);">zip 135KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11034);">zip 158KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11031);">zip 171KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11028);">zip 183KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月10日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11025);">zip 181KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月9日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11022);">zip 158KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11019);">zip 192KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11016);">zip 212KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type0_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月6日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11013);">zip 158KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="formAddr07">
+                    <button type="button" id="btnMore0" onclick="clickHistoryBtn(0)">
+                        <img src="/common/images/btn-more02.png" width="430" height="50" alt="さらに以前の差分データを見る">
+                    </button>
+                </div>
+            
+            <p class="linkArw03 mb10"><a href="#pageTop">ページの先頭へ戻る</a></p>
+            
+                
+                
+                    <h2 class="title" id="csv-unicode">CSV形式・Unicode</h2>
+                
+                
+                <div class="tbl03">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w30">差分データファイル作成日</th>
+                                <th scope="col">ダウンロードファイル</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                                
+                                    
+                                        <tr class="type1_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月4日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11429);">zip 204KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type1_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月3日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11426);">zip 211KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type1_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月2日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11423);">zip 190KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type1_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11420);">zip 170KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type1_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年5月29日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11268);">zip 182KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11265);">zip 173KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11262);">zip 196KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月26日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11259);">zip 215KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月25日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11256);">zip 185KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11253);">zip 194KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11250);">zip 181KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11247);">zip 189KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月19日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11244);">zip 234KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月18日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11241);">zip 173KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11238);">zip 169KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11235);">zip 163KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11232);">zip 169KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月12日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11229);">zip 191KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月11日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11226);">zip 161KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11223);">zip 153KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11220);">zip 139KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11217);">zip 156KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月30日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11065);">zip 141KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11062);">zip 152KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11059);">zip 139KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月24日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11056);">zip 144KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月23日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11053);">zip 139KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11050);">zip 155KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11047);">zip 171KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11044);">zip 148KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月17日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11041);">zip 172KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月16日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11038);">zip 144KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11035);">zip 169KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11032);">zip 182KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11029);">zip 195KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月10日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11026);">zip 193KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月9日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11023);">zip 168KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11020);">zip 206KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11017);">zip 226KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type1_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月6日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11014);">zip 169KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="formAddr07">
+                    <button type="button" id="btnMore1" onclick="clickHistoryBtn(1)">
+                        <img src="/common/images/btn-more02.png" width="430" height="50" alt="さらに以前の差分データを見る">
+                    </button>
+                </div>
+            
+            <p class="linkArw03 mb10"><a href="#pageTop">ページの先頭へ戻る</a></p>
+            
+                
+                
+                
+                    <h2 class="title" id="xml-unicode">XML形式・Unicode</h2>
+                
+                <div class="tbl03">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w30">差分データファイル作成日</th>
+                                <th scope="col">ダウンロードファイル</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            
+                                
+                                    
+                                        <tr class="type2_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月4日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11430);">zip 276KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type2_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月3日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11427);">zip 285KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type2_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月2日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11424);">zip 256KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type2_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年6月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11421);">zip 230KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                        <tr class="type2_corpHistory1">
+                                    
+                                    
+                                        <th scope="row">
+                                            令和2年5月29日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11269);">zip 244KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11266);">zip 234KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11263);">zip 263KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月26日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11260);">zip 290KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月25日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11257);">zip 249KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory2" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11254);">zip 261KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11251);">zip 245KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11248);">zip 255KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月19日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11245);">zip 315KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月18日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11242);">zip 235KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory3" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11239);">zip 228KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11236);">zip 220KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11233);">zip 228KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月12日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11230);">zip 257KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月11日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11227);">zip 217KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory4" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11224);">zip 206KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11221);">zip 188KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年5月1日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11218);">zip 211KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月30日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11066);">zip 190KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月28日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11063);">zip 204KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory5" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月27日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11060);">zip 187KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月24日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11057);">zip 196KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月23日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11054);">zip 188KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月22日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11051);">zip 209KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月21日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11048);">zip 232KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory6" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月20日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11045);">zip 200KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月17日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11042);">zip 233KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月16日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11039);">zip 194KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月15日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11036);">zip 228KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月14日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11033);">zip 247KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory7" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月13日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11030);">zip 264KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                            
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月10日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11027);">zip 262KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月9日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11024);">zip 227KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月8日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11021);">zip 278KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月7日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11018);">zip 306KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                                    
+                                    
+                                        <tr class="type2_corpHistory8" style="display: none;">
+                                    
+                                        <th scope="row">
+                                            令和2年4月6日
+                                        </th>
+                                        <td>
+                                            
+                                                <a href="#" onclick="return doDownload(11015);">zip 228KB</a><br>
+                                            
+                                        </td>
+                                    </tr>
+                                
+                            
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="formAddr07">
+                    <button type="button" id="btnMore2" onclick="clickHistoryBtn(2)">
+                        <img src="/common/images/btn-more02.png" width="430" height="50" alt="さらに以前の差分データを見る">
+                    </button>
+                </div>
+            
+            <p class="linkArw03 mb10"><a href="#pageTop">ページの先頭へ戻る</a></p>
+            
+        </div>
+        <div class="catNav">
+            <ul>
+                <li><a href="/download/zenken/">全件データのダウンロード（各都道府県別）</a></li>
+                <li>差分データのダウンロード（全国）</li>
+            </ul>
+        </div>
+        <div class="btmNav">
+            <ul>
+                <li><a href="/download/">基本３情報ダウンロードに戻る</a></li>
+            </ul>
+        </div>
+        <input type="hidden" id="corpHistoryNum" value="8"/>
+    </form>
+
+		
+
+	<!-- /box01 --></div>
+<!-- /main --></main>
+<!-- /contents --></div>
+
+<div class="pageTop"><a href="#pageTop"><img src="/common/images/foot-pagetop.png" alt="ページの先頭へ戻る" width="180" height="33"></a></div>
+
+<div class="footLink">
+	<div class="footNavi">
+		<div class="inner">
+			<ul>
+				<li><a href="/">ホーム</a>
+					<ul>
+						<li><a href="/matomete.html">まとめて検索</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/setsumei/">法人番号とは</a>
+					<ul>
+						<li><a href="/setsumei/kuninokikanichiran.html">国の機関等一覧</a></li>
+						<li><a href="/setsumei/pamphlet/">各種資料の紹介</a></li>
+						<li><a href="/setsumei/tsuchisho/">通知書について</a></li>
+						<li><a href="/setsumei/houjin-bangou_joho/">法人番号に関する情報</a></li>
+						<li><a href="/setsumei/shinsetsuhoujin/">新しく法人の設立登記をされた方へ</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/download/">基本３情報ダウンロード</a>
+					<ul>
+						<li><a href="/download/zenken/">全件ダウンロード</a></li>
+						<li><a href="/download/sabun/">差分ダウンロード</a></li>
+						<li><a href="/download/baitaiteikyo/">情報記録媒体による提供</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/webapi/">Web-API</a>
+					<ul>
+						<li><a href="/webapi/riyokiyaku.html">Web-API利用規約</a></li>
+						<li><a href="/webapi/riyo-todokedesho/">ID発行届出書</a></li>
+						<li><a href="/webapi/riyo-todokede/">ID発行届出フォーム</a></li>
+						<li><a href="/webapi/toiawase/">Web-APIお問い合わせ</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li><a href="/eigotouroku/">英語表記の登録</a>
+					<ul>
+						<li><a href="/eigotouroku/riyokiyaku.html">英語表記登録の利用規約</a></li>
+					</ul>
+				</li>
+				<li><a href="/tetsuzuki/">各種手続</a></li>
+				<li><a href="/shitsumon/">よくある質問</a></li>
+				<li class="mb30"><a href="/oshirase/">お知らせ</a></li>
+			</ul>
+		</div>
+	<!-- /footNavi --></div>
+	<ul class="footMenu">
+		<li><a href="/website/">このサイトについて</a></li>
+		<li><a href="/iken/">ご意見・ご要望</a></li>
+		<li><a href="/riyokiyaku/">サイト利用規約</a></li>
+		<li><a href="/link/">関連リンク</a></li>
+		<li><a href="/hogohoshin/">個人情報保護方針</a></li>
+		<li><a href="/johokokai/">情報公開</a></li>
+		<li><a href="/kojinjoho/">個人情報保護</a></li>
+		<li><a href="/enquete/">利用者アンケート</a></li>
+	<!-- /footMenu --></ul>
+<!-- /footLink --></div>
+
+<footer role="contentinfo">
+		<div class="inBox06">
+
+		<p> (C) 2015 <a href="https://www.nta.go.jp/">国税庁（法人番号7000012050002）</a><a href="https://www.nta.go.jp/taxes/tetsuzuki/mynumberinfo/index.htm">社会保障・税番号制度</a></p>
+		<small>〒113-8582&nbsp;東京都文京区湯島４丁目６－15　湯島地方合同庁舎　　国税庁　長官官房企画課　法人番号管理室　　<a href="/shozaichi/">電話番号・案内図</a></small>
+	</div>
+<!-- /footer --></footer>
+
+<!-- /wrapper --></div>
+
+</body>
+</html>
+

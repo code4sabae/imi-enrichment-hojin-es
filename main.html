@@ -1,0 +1,11 @@
+<script type="module">
+
+import IMIEnrichmentHojin from "https://code4sabae.github.io/imi-enrichment-hojin/IMIEnrichmentHojin.mjs";
+
+const main = async () => {
+  const json = await IMIEnrichmentHojin("4000012090001");
+  alert(JSON.stringify(json, null, 2));
+};
+main();
+
+</script>
