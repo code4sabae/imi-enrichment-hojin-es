@@ -1,6 +1,6 @@
-# 法人種別名の抽出コンポーネント imi-enrichment-hojin ES module ver.
+# IMI 法人種別名の抽出コンポーネント imi-enrichment-hojin ES
 
-入力となる JSON-LD に含まれる `ID>識別値 をもつ 法人型` に対して各種のプロパティを補完して返すESモジュールです。
+入力となる JSON-LD に含まれる `ID>識別値 をもつ 法人型` に対して各種のプロパティを補完して返す、[IMI 法人種別名の抽出コンポーネント](https://github.com/IMI-Tool-Project/imi-enrichment-hojin)をforkしたESモジュールです。
 
 [![esmodules](https://taisukef.github.com/denolib/esmodulesbadge.svg)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules)
 [![deno](https://taisukef.github.com/denolib/denobadge.svg)](https://deno.land/)
@@ -10,7 +10,7 @@
 モジュール `imi-enrichment-hojin` は以下のような API の関数を提供します。
 
 ```
-import IMIEnrichmentHojin from "https://code4sabae.github.io/imi-enrichment-hojin/IMIEnrichmentHojin.mjs";
+import IMIEnrichmentHojin from "https://code4sabae.github.io/imi-enrichment-hojin-es/IMIEnrichmentHojin.mjs";
 
 console.log(await IMIEnrichmentHojin("4000012090001"));
 ```
@@ -111,16 +111,12 @@ toplevel await 非対応のブラウザでは、async関数内で使用してく
 - 法人番号のチェックデジットが不正な場合
 - 指定された法人番号が存在しない場合
 
-# 利用者向け情報
-
-以下の手順はパッケージアーカイブ `imi-enrichment-hojin-2.0.0.tgz` を用いて実行します。
-
 ## インストール
 
 以下の手順でインストールしローカルでも使用できます。（全法人番号をダウンロードするため重いので注意！）
 
 ```
-$ github clone https://github.com/code4sabae/imi-enrichment-hojin.git
+$ github clone https://github.com/code4sabae/imi-enrichment-hojin-es.git
 ```
 
 ## データ生成
@@ -132,20 +128,6 @@ $ github clone https://github.com/code4sabae/imi-enrichment-hojin.git
 $ tools
 $ deno run -A download.mjs
 $ sh makedata.sh
-```
-
-## 環境構築
-
-以下の手順で環境を構築します。
-
-```
-$ mkdir imi-enrichment-hojin
-$ cd imi-enrichment-hojin
-$ tar xvzf /tmp/imi-enrichment-hojin-2.0.0.src.tgz
-$ npm install
-$ mkdir cache
-$ cp /tmp/zenken/*.zip cache
-$ npm run setup
 ```
 
 ## テスト
@@ -164,7 +146,7 @@ https://github.com/taisukef/util
 
 ## 出典
 
-本ライブラリは IMI 情報共有基盤 コンポーネントツール <https://info.gbiz.go.jp/tools/imi_tools/> の「法人種別名の抽出コンポーネント」をESモジュール対応したものです。
+本ライブラリは IMI 情報共有基盤 コンポーネントツール <https://info.gbiz.go.jp/tools/imi_tools/> の「[IMI 法人種別名の抽出コンポーネント](https://github.com/IMI-Tool-Project/imi-enrichment-hojin)」をESモジュール対応したものです。
 
 ## 関連記事
 

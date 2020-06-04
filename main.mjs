@@ -1,4 +1,4 @@
-import IMIEnrichmentHojin from "https://code4sabae.github.io/imi-enrichment-hojin/IMIEnrichmentHojin.mjs";
+import IMIEnrichmentHojin from "https://code4sabae.github.io/imi-enrichment-hojin-es/IMIEnrichmentHojin.mjs";
 //import IMIEnrichmentHojin from "./IMIEnrichmentHojin.mjs";
 
 console.log(await IMIEnrichmentHojin("4000012090001"));
