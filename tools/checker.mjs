@@ -1,9 +1,9 @@
 import csvutil from "https://taisukef.github.io/util/util.mjs";
 
-const countLines = fn => {
+const countLines = (fn) => {
   const csv = csvutil.decodeCSV(Deno.readTextFileSync(fn));
   return csv.length;
-}
+};
 
 const path = "../data/";
 const list = Deno.readDirSync(path);
@@ -13,11 +13,11 @@ let nfiles = 0;
 const corpnums = [];
 for (const file of list) {
   const fn = file.name;
-  if (!fn.endsWith(".csv")) { continue; }
+  if (!fn.endsWith(".csv")) continue;
   const len = countLines(path + fn);
   console.log(file.name, len);
   sum += len;
-  if (len > max) { max = len; }
+  if (len > max) max = len;
   nfiles++;
   corpnums.push(parseInt(fn));
 }

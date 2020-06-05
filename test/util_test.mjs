@@ -1,8 +1,12 @@
-import { describe, it, expect, makeDirname } from "https://taisukef.github.io/denolib/nodelikeassert.mjs"
+import {
+  describe,
+  it,
+  expect,
+  makeDirname,
+} from "https://taisukef.github.io/denolib/nodelikeassert.mjs";
 import util from "../lib/util.mjs";
 
-describe('imi-enrichment-hojin#util', () => {
-
+describe("imi-enrichment-hojin#util", () => {
   it("getCheckDigit", () => {
     expect(util.getCheckDigit("8700110005901")).to.equal(8);
     expect(util.getCheckDigit("4000012090001")).to.equal(4);
@@ -39,92 +43,119 @@ describe('imi-enrichment-hojin#util', () => {
     expect(util.deepStrictEqual(true, true)).to.be.true;
     expect(util.deepStrictEqual(false, false)).to.be.true;
     expect(util.deepStrictEqual("hello", "hello")).to.be.true;
-    expect(util.deepStrictEqual([0, "hello", true], [0, "hello", true])).to.be.true;
+    expect(util.deepStrictEqual([0, "hello", true], [0, "hello", true])).to.be
+      .true;
     expect(util.deepStrictEqual({
       a: 1,
-      b: 2
+      b: 2,
     }, {
       b: 2,
-      a: 1
+      a: 1,
     })).to.be.true;
 
     expect(util.deepStrictEqual("hello", "world")).to.be.false;
-    expect(util.deepStrictEqual([0, "hello", true], [0, "hello", false])).to.be.false;
-    expect(util.deepStrictEqual([0, "hello", true], [0, true, "hello"])).to.be.false;
+    expect(util.deepStrictEqual([0, "hello", true], [0, "hello", false])).to.be
+      .false;
+    expect(util.deepStrictEqual([0, "hello", true], [0, true, "hello"])).to.be
+      .false;
     expect(util.deepStrictEqual({
       a: 1,
-      b: 2
+      b: 2,
     }, {
-      b: 2
+      b: 2,
     })).to.be.false;
   });
 
   it("put", () => {
     expect(util.put({}, "name", "Alice")).deep.equal({
-      "name": "Alice"
+      "name": "Alice",
     });
-    expect(util.put({
-      "name": "Alice"
-    }, "name", "Alice")).deep.equal({
-      "name": "Alice"
+    expect(util.put(
+      {
+        "name": "Alice",
+      },
+      "name",
+      "Alice",
+    )).deep.equal({
+      "name": "Alice",
     });
-    expect(util.put({
-      "name": "Bob"
-    }, "name", "Alice")).deep.equal({
-      "name": ["Bob", "Alice"]
+    expect(util.put(
+      {
+        "name": "Bob",
+      },
+      "name",
+      "Alice",
+    )).deep.equal({
+      "name": ["Bob", "Alice"],
     });
-    expect(util.put({
-      "name": ["Bob", "Cate"],
-    }, "name", "Alice")).deep.equal({
-      "name": ["Bob", "Cate", "Alice"]
+    expect(util.put(
+      {
+        "name": ["Bob", "Cate"],
+      },
+      "name",
+      "Alice",
+    )).deep.equal({
+      "name": ["Bob", "Cate", "Alice"],
     });
     expect(util.put({}, "is", {
-      "@type": "Cat"
+      "@type": "Cat",
     })).deep.equal({
       "is": {
-        "@type": "Cat"
-      }
+        "@type": "Cat",
+      },
     });
-    expect(util.put({
+    expect(util.put(
+      {
+        "is": {
+          "@type": "Cat",
+        },
+      },
+      "is",
+      {
+        "@type": "Cat",
+      },
+    )).deep.equal({
       "is": {
-        "@type": "Cat"
-      }
-    }, "is", {
-      "@type": "Cat"
-    })).deep.equal({
-      "is": {
-        "@type": "Cat"
-      }
+        "@type": "Cat",
+      },
     });
-    expect(util.put({
-      "is": {
-        "@type": "Dog"
-      }
-    }, "is", {
-      "@type": "Cat"
-    })).deep.equal({
+    expect(util.put(
+      {
+        "is": {
+          "@type": "Dog",
+        },
+      },
+      "is",
+      {
+        "@type": "Cat",
+      },
+    )).deep.equal({
       "is": [{
-        "@type": "Dog"
+        "@type": "Dog",
       }, {
-        "@type": "Cat"
-      }]
+        "@type": "Cat",
+      }],
     });
-    expect(util.put({
+    expect(util.put(
+      {
+        "is": [{
+          "@type": "Dog",
+        }, {
+          "@type": "Animal",
+        }],
+      },
+      "is",
+      {
+        "@type": "Cat",
+      },
+    )).deep.equal({
       "is": [{
-        "@type": "Dog"
+        "@type": "Dog",
       }, {
-        "@type": "Animal"
-      }]
-    }, "is", {
-      "@type": "Cat"
-    })).deep.equal({
-      "is": [{
-        "@type": "Dog"
+        "@type": "Animal",
       }, {
-        "@type": "Animal"
-      }, {
-        "@type": "Cat"
-      }]
+        "@type": "Cat",
+      }],
     });
   });
 });

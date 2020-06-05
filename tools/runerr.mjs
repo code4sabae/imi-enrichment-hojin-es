@@ -8,12 +8,10 @@ const p = Deno.run({
 });
 await p.output();
 
-
 const input = new TextProtoReader(new BufReader(p.stdout));
 //const input = new TextProtoReader(new BufReader(Deno.stdin)); // inherit, ok but won't stop
 for (;;) {
   const line = await input.readLine();
   console.log(line);
-  if (line == null) { break; }
+  if (line == null) break;
 }
-

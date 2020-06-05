@@ -1,4 +1,4 @@
-// unzip 
+// unzip
 
 import { TextProtoReader } from "https://deno.land/std/textproto/mod.ts";
 import { BufReader } from "https://deno.land/std/io/bufio.ts";
@@ -10,9 +10,9 @@ const input = new TextProtoReader(new BufReader(Deno.stdin));
 let cnt = 0;
 for (;;) {
   const line = await input.readLine();
-  if (line == null) { break; }
+  if (line == null) break;
   const ss = csvutil.decodeCSV(line);
-  if (ss.length !== 1) { throw new Error(ss) }
+  if (ss.length !== 1) throw new Error(ss);
   const data = ss[0];
   const id = data[1];
   const upper = id.substring(1, id.length - DIV); // the first char is a check digit
