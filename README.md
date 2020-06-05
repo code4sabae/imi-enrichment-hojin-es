@@ -135,7 +135,7 @@ $ sh makedata.sh
 以下の手順でテストを実行します
 
 ```
-$ deno test -A
+$ deno test -A *.mjs
 ```
 
 ## 依存モジュール
