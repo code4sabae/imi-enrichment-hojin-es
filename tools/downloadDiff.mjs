@@ -35,7 +35,7 @@ const downloadIndexDiff = async () => {
   Deno.writeTextFileSync("diff.html", html);
 }
 
-// await downloadIndexDiff();
+await downloadIndexDiff();
 const html = Deno.readTextFileSync("diff.html");
 const dom = cheerio.load(html);
 
