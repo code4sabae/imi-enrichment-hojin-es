@@ -3,7 +3,7 @@
 入力となる JSON-LD に含まれる `ID>識別値 をもつ 法人型` に対して各種のプロパティを補完して返す、[IMI 法人種別名の抽出コンポーネント](https://github.com/IMI-Tool-Project/imi-enrichment-hojin)をforkしたESモジュールです。
 
 [![esmodules](https://taisukef.github.com/denolib/esmodulesbadge.svg)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules)
-[![deno](https://taisukef.github.com/denolib/denobadge.svg)](https://deno.land/)
+[![deno](https://taisukef.github.com/denolib/denobadge@1.0.5.svg)](https://deno.land/)
 
 ## API (web / Deno)
 
